@@ -4,7 +4,7 @@ import logo from '../assets/Instagram_txt.png';
 function Sidebar() {
   return (
    <>
-   < div className="m-3">
+   < div className="m-3 position-fixed">
      <div  className="d-flex flex-column gap-4">
     <img className="w-img" src={logo} alt="Instagram logo" />
     <div><i className="bi bi-house"></i> Home</div>

@@ -63,5 +63,31 @@
         }
       ]
     }
+  ],
+  "profile":
+  {
+    "id": 201,
+    "username": "aravind",
+    "full_name": "Dev User",
+    "profile_pic": "src/assets/my_profile.png",
+    "bio": "Just a developer exploring the world of code!"
+  },
+  "suggestions":[
+    {
+      "id":301,
+      "username":"arjun",
+      "profile_pic":"src/assets/arjun.png"
+    },
+    {
+      "id":302,
+      "username":"sanjay",
+      "profile_pic":"src/assets/sanjay.png"
+    },
+    {
+      "id":303,
+      "username":"dhanush",
+      "profile_pic":"src/assets/dhanush.png"
+    }
   ]
+
 }
