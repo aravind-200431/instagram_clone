@@ -40,3 +40,13 @@
 {
   margin-top: 0px !important;
 }
+.gradient-border
+{
+  width:45px;
+  height: 45px;
+  border-radius:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,#ff00ff,#ff6600,#ffcc00);
+}
