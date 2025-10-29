@@ -1,0 +1,67 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userId": {
+        "id": 101,
+        "username": "thor",
+        "profile_pic": "src/assets/thor.png"
+      },
+      "image": "src/assets/Asgard.png",
+      "caption": "Exploring React components today! ⚛️",
+      "likes": 120,
+      "comments": [
+        {
+          "user": "loki",
+          "comment": "Nice work bro 🔥"
+        },
+        {
+          "user": "hulk",
+          "comment": "React is awesome!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": {
+        "id": 102,
+        "username": "loki",
+        "profile_pic": "src/assets/loki.png"
+      },
+      "image": "src/assets/tva.png",
+      "caption": "Beautiful sunset at the beach 🌅",
+      "likes": 300,
+      "comments": [
+        {
+          "user": "thor",
+          "comment": "Amazing shot 📸"
+        },
+        {
+          "user": "photo_fan",
+          "comment": "Love the lighting!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userId": {
+        "id": 103,
+        "username": "hulk",
+        "profile_pic": "src/assets/hulk.png"
+      },
+      "image": "./src/assets/black.png",
+      "caption": "Coding + Coffee = ❤️",
+      "likes": 210,
+      "comments": [
+        {
+          "user": "loki",
+          "comment": "Perfect combo ☕💻"
+        },
+        {
+          "user": "thor",
+          "comment": "Totally agree!"
+        }
+      ]
+    }
+  ]
+}
