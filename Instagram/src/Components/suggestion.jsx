@@ -10,7 +10,7 @@ function Suggestion() {
       .then((data) => setprofile(data))
       .catch((err) => console.error("Error fetching profile:", err));
 
-    fetch("http://localhost:3000/suggestions")
+    fetch("http://localhost:3001/suggestions")
       .then((res) => res.json())
       .then((data) => setsuggestion(data))
       .catch((err) => console.error("Error fetching suggestions:", err));

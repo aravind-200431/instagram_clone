@@ -4,7 +4,7 @@ function Post() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts")
+    fetch("http://localhost:3001/posts")
       .then((res) => res.json())
       .then((data) => setPosts(data))
       .catch((err) => console.error("Error fetching posts:", err));
@@ -19,6 +19,7 @@ function Post() {
               <div className="d-flex">
                 <img
                   className="dp rounded-circle"
+
                   src={post.userId.profile_pic}
                   alt="User profile"
                 />
