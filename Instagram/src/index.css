@@ -16,7 +16,8 @@
 }
 .story
 {
-  height:60px;
+  height:80px;
+  padding:10px;
 }
 .dp
 {
@@ -49,4 +50,11 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg,#ff00ff,#ff6600,#ffcc00);
+}
+.story-dp
+{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:2px solid white;
 }
