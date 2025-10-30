@@ -8,8 +8,13 @@ function Viewstory() {
 useEffect(
   ()=>
   {
-    fetch(`http://localhost:3002/story/${id}`)
-    .then((res)=>res.json())
+    fetch(`http://localhost:3001/story/${id}`)
+    .then((res)=>{
+      if (!res.ok) {
+        throw new Error(`Story not found (${res.status})`);
+      }
+      return res.json();
+    })
     .then((data)=>setStorydata(data))
     .catch((err)=>console.error("Error fetching story:",err))
   },[id]);
@@ -19,7 +24,7 @@ useEffect(
     
     <div>
        {
-      storydata?<div><img src={storydata.story_pic} alt='story' /></div> : <div>Loading...</div>
+      storydata?<div>{storydata.user.username}</div> : <div>Loading...</div>
        }
     </div>
   )

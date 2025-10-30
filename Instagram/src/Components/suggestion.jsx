@@ -5,12 +5,12 @@ function Suggestion() {
   const [suggestion, setsuggestion] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3002/profile")
+    fetch("http://localhost:3001/profile")
       .then((res) => res.json())
       .then((data) => setprofile(data))
       .catch((err) => console.error("Error fetching profile:", err));
 
-    fetch("http://localhost:3002/suggestions")
+    fetch("http://localhost:3001/suggestions")
       .then((res) => res.json())
       .then((data) => setsuggestion(data))
       .catch((err) => console.error("Error fetching suggestions:", err));

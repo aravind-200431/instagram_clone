@@ -4,7 +4,7 @@ function Stories() {
   const [story, setstory] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3002/story")
+    fetch("http://localhost:3001/story")
       .then((res) => res.json())
       .then((data) => setstory(data))
       .catch((err) => console.error("Error fetching stories:", err));
