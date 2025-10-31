@@ -93,7 +93,7 @@
     {
       "id":1,
       "user":{
-        "id":103,
+        "id":454,
         "username":"hulk",
         "profile_pic":"src/assets/hulk.png"
       },
@@ -102,20 +102,20 @@
     {
       "id":2,
       "user":{
-        "id":102,
+        "id":455,
         "username":"loki",
         "profile_pic":"src/assets/loki.png"
       },
-      "story_pic":"src/assets/tva.png"
+      "story_pic":"src/assets/story_pic2.png"
     },
     {
       "id":3,
       "user":{
-        "id":101,
+        "id":456,
         "username":"thor",
         "profile_pic":"src/assets/thor.png"
       },
-      "story_pic":"src/assets/Asgard.png"
+      "story_pic":"src/assets/story_pic3.png"
     }
     
   ]

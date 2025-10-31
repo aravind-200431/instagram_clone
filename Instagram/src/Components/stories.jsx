@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Stories() {
   const [story, setstory] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3001/story")
@@ -15,7 +17,7 @@ function Stories() {
       {story.length > 0 ? (
         <div className="d-flex">
           {story.map((s) => (
-            <div key={s.id} className="mx-2 text-center">
+            <div key={s.id} className="mx-2 text-center" onClick={()=>{navigate(`/story/${s.id}/${story.length}`)}}>
               <img
                 className="gradient-border rounded-circle p-1"
                 src={s.user.profile_pic}
