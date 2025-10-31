@@ -3,6 +3,7 @@ import './index.css'
 import App from './App.jsx'
 import {createBrowserRouter, Route, RouterProvider} from 'react-router-dom'
 import Viewstory from './Components/viewstory.jsx'
+import Profile from './Components/profile.jsx'
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: '/story/:id/:tot',
     element: <Viewstory/>
+  },
+  {
+    path: '/profile',
+    element: <Profile/>
   }
 ]);
 

@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "userId": {
         "id": 101,
         "username": "thor",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": {
         "id": 102,
         "username": "loki",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": {
         "id": 103,
         "username": "hulk",
@@ -64,60 +64,75 @@
       ]
     }
   ],
-  "profile":
-  {
+  "profile": {
     "id": 201,
     "username": "aravind",
     "full_name": "Dev User",
     "profile_pic": "src/assets/my_profile.png",
     "bio": "Just a developer exploring the world of code!"
   },
-  "suggestions":[
+  "suggestions": [
     {
-      "id":301,
-      "username":"arjun",
-      "profile_pic":"src/assets/arjun.png"
+      "id": "301",
+      "username": "arjun",
+      "profile_pic": "src/assets/arjun.png"
     },
     {
-      "id":302,
-      "username":"sanjay",
-      "profile_pic":"src/assets/sanjay.png"
+      "id": "302",
+      "username": "sanjay",
+      "profile_pic": "src/assets/sanjay.png"
     },
     {
-      "id":303,
-      "username":"dhanush",
-      "profile_pic":"src/assets/dhanush.png"
+      "id": "303",
+      "username": "dhanush",
+      "profile_pic": "src/assets/dhanush.png"
     }
   ],
-  "story":[
+  "story": [
     {
-      "id":1,
-      "user":{
-        "id":454,
-        "username":"hulk",
-        "profile_pic":"src/assets/hulk.png"
+      "id": "1",
+      "user": {
+        "id": 454,
+        "username": "hulk",
+        "profile_pic": "src/assets/hulk.png"
       },
-      "story_pic":"src/assets/story_pic1.png"
+      "story_pic": "src/assets/story_pic1.png"
     },
     {
-      "id":2,
-      "user":{
-        "id":455,
-        "username":"loki",
-        "profile_pic":"src/assets/loki.png"
+      "id": "2",
+      "user": {
+        "id": 455,
+        "username": "loki",
+        "profile_pic": "src/assets/loki.png"
       },
-      "story_pic":"src/assets/story_pic2.png"
+      "story_pic": "src/assets/story_pic2.png"
     },
     {
-      "id":3,
-      "user":{
-        "id":456,
-        "username":"thor",
-        "profile_pic":"src/assets/thor.png"
+      "id": "3",
+      "user": {
+        "id": 456,
+        "username": "thor",
+        "profile_pic": "src/assets/thor.png"
       },
-      "story_pic":"src/assets/story_pic3.png"
+      "story_pic": "src/assets/story_pic3.png"
     }
-    
+  ],
+  "followers":[
+    {
+      "id": "401",
+      "username": "bruce",
+      "profile_pic": "src/assets/bruce.png"
+    },
+    {
+      "id": "402",
+      "username": "clark",
+      "profile_pic": "src/assets/clark.png"
+    },
+    {
+      "id": "403",
+      "username": "diana",
+      "profile_pic": "src/assets/diana.png"
+    }
+   
   ]
-
 }
