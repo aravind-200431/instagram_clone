@@ -9,7 +9,12 @@ function Profile() {
     axios
       .get('http://localhost:3001/profile')
       .then((res) => setProfile(res.data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
+
+    axios
+      .get('http://localhost:3001/followers')
+      .then((res) => setFollowers(res.data))
+      .catch((err) => console.log(err))
   }, []);
   function handleChange(e)
   {
@@ -47,6 +52,17 @@ function Profile() {
       ) : (
         <div>Loading Profile ...</div>
       )}
+      {
+        followers.length > 0 && (
+            followers.map((follower) => (
+              <div key={follower.id} className="card my-3" style={{ width: '18rem' }}>
+                <div className="card-body">
+                  <h5 className="card-title">{follower.username}</h5>
+                </div>
+              </div>
+            ))
+          )
+      }
     </div>
   );
 }

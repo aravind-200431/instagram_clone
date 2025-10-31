@@ -117,7 +117,7 @@
       "story_pic": "src/assets/story_pic3.png"
     }
   ],
-  "followers":[
+  "followers": [
     {
       "id": "401",
       "username": "bruce",
@@ -132,7 +132,14 @@
       "id": "403",
       "username": "diana",
       "profile_pic": "src/assets/diana.png"
+    },
+    {
+      "id": "301",
+      "username": "arjun"
+    },
+    {
+      "id": "302",
+      "username": "sanjay"
     }
-   
   ]
 }

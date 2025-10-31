@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Suggestion() {
   const [profile, setprofile] = useState(null);
@@ -15,6 +16,12 @@ function Suggestion() {
       .then((data) => setsuggestion(data))
       .catch((err) => console.error("Error fetching suggestions:", err));
   }, []);
+  const handlefollow=async(id,username)=>
+  {
+    axios.post('http://localhost:3001/followers',{"id":id,"username":username})
+    .then(() => alert("Followed"))
+    .catch((err) => console.error("Error following user:", err));
+  };
 
   return (
     <div>
@@ -40,7 +47,7 @@ function Suggestion() {
                 <div>
                   <h6>{suggest.username}</h6>
                 </div>
-                <small className="ms-auto text-primary">Follow</small>
+                <button className="ms-auto text-primary border-0 bg-transparent" onClick={() => handlefollow(suggest.id, suggest.username)}>Follow</button>
               </div>
             ))}
           </div>
