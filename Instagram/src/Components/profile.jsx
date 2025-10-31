@@ -4,6 +4,7 @@ import axios from 'axios';
 function Profile() {
   const [profile, setProfile] = useState(null);
   const [followers, setFollowers] = useState([]);
+  const [unfollow, setUnfollow] = useState(0);
 
   useEffect(() => {
     axios
@@ -15,7 +16,7 @@ function Profile() {
       .get('http://localhost:3001/followers')
       .then((res) => setFollowers(res.data))
       .catch((err) => console.log(err))
-  }, []);
+  }, [unfollow]);
   function handleChange(e)
   {
    setProfile(prev => ({
@@ -26,6 +27,13 @@ function Profile() {
     axios.put('http://localhost:3001/profile',profile)
     .then(console.log("Profile updated"))
     .catch((err)=>console.error("Error updating profile:",err))
+   }
+   const handleunfollow=async(id)=>
+   {
+    axios.delete(`http://localhost:3001/followers/${id}`)
+    .then(() => alert("Unfollowed"))
+    .then(() => setUnfollow(!unfollow))
+    .catch((err) => console.error("Error unfollowing user:", err));
    }
 
 
@@ -58,6 +66,7 @@ function Profile() {
               <div key={follower.id} className="card my-3" style={{ width: '18rem' }}>
                 <div className="card-body">
                   <h5 className="card-title">{follower.username}</h5>
+                  <button onClick={()=>{handleunfollow(follower.id)}}>unfollow</button>
                 </div>
               </div>
             ))
