@@ -119,11 +119,6 @@
   ],
   "followers": [
     {
-      "id": "401",
-      "username": "bruce",
-      "profile_pic": "src/assets/bruce.png"
-    },
-    {
       "id": "402",
       "username": "clark",
       "profile_pic": "src/assets/clark.png"
@@ -132,6 +127,10 @@
       "id": "403",
       "username": "diana",
       "profile_pic": "src/assets/diana.png"
+    },
+    {
+      "id": "301",
+      "username": "arjun"
     },
     {
       "id": "301",
